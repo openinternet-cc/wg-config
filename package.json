@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/openinternet-cc/wg-config#readme",
   "dependencies": {
+    "axios": "^0.21.1",
+    "child_process": "^1.0.2",
     "express": "^4.17.1"
   }
 }
