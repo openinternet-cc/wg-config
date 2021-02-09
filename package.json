@@ -1,0 +1,22 @@
+{
+  "name": "wg-config",
+  "version": "1.0.0",
+  "description": "This is a simple wireguard VPN user management script using on VPN server. Client config file and qrcode are generated.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openinternet-cc/wg-config.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openinternet-cc/wg-config/issues"
+  },
+  "homepage": "https://github.com/openinternet-cc/wg-config#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
