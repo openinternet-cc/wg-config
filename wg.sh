@@ -41,7 +41,7 @@ generate_cidr_ip_file_if() {
     local i=$((beg+2))
     while [[ $i -lt $end ]]; do
         ip=$(dec2ip $i)
-        echo "$ip/$mask" >> $AVAILABLE_IP_FILE
+        echo "$ip/32" >> $AVAILABLE_IP_FILE
         i=$((i+1))
     done
 }
