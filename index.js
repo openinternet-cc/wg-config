@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 app.use(express.json())
 const { exec } = require("child_process");
+app.use(express.static('users'))
 
 app.post('/exec', async (req, res) => {
   if (req.body.method) {
@@ -28,7 +29,7 @@ app.post('/exec', async (req, res) => {
   }
 });
 
-app.listen(3000)
+app.listen(5000)
 
 
 
