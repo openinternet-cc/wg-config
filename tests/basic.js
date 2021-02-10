@@ -4,19 +4,21 @@
  */
 
 const axios = require('axios')
-let args = process.argv.slice(3);
 
 const method = process.argv[2]
-if (method !== 'create' || method !== 'delete') {
+console.log('method',method)
+if (method !== 'create' && method !== 'delete') {
   console.error('invalid method')
   process.exit()
 }
 
+let args = process.argv.slice(3);
+
 for (i in args) {
-  let username = args[i]
-  console.log('handling user', username)
-  const r = axios.post('http://localhost:3000/exec', {
+  let user_email = args[i]
+  console.log('handling user', user_email)
+  const r = axios.post('http://localhost:5000/exec', {
     method: method,
-    user: username
+    user_email: user_email
   })
 }
