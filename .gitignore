@@ -2,7 +2,4 @@
 .saved
 .wg0.conf
 users/
-wg.def
-client.conf.tpl
-server.conf.tpl
 node_modules
