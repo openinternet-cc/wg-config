@@ -23,6 +23,7 @@ app.post('/exec', async (req, res) => {
           res.status(200).send('ok:)')
         } else {
           console.log('user already exist for', req.body.user_email)
+          res.status(200).send('ok. user already exist.')
         }
       } else if (req.body.method === 'delete'){
         //do something on delete
